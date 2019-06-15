@@ -1,0 +1,43 @@
+.ba-header-wrap {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 0;
+  z-index: 3;
+  @include breakpoint(medium){
+    padding: 30px 0;
+  }
+}
+
+.ba-main-menu {
+    @include breakpoint(large){
+        padding-right: 57px;
+    }
+    li + li {
+        margin-left: 24px;
+    }
+  a {
+    font-family: $headings-font-family;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    color: $white;
+    text-transform: uppercase;
+    &:hover, &:focus {
+      color: darken($primary-color, 10%);
+    }
+  }
+}
+.off-canvas {
+  .menu {
+    a {
+      padding: 10px;
+    }
+  }
+}
+
+.ba-scrolled {
+  padding: 10px 0;
+  background-color: rgba($primary-color, .8);
+}
+
